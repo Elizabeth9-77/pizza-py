@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff8f0;
+}
+
+.hidden-heading {
+    display: none;
+}
+
+/*---------------------------------------- NAVBAR ----------------------------------------*/
+
+.navbar {
+    background-color: #C05746;
+}
+
+
+.navbar-brand {
+    background-color: #fff8f0;
+}
+
+.nav-item > a {
+    color: #fff8f0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+
+.nav-item.active > a {
+    font-weight: bold;
+}
+
+
+
+/*---------------------------------------- HERO IMAGE ----------------------------------------*/
+
+.hero-image {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero\ image.jpg") no-repeat center center/cover;
+    position: relative;
+    color: #fff8f0;
+    
+}
+
+.hero-image h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 400%;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 15%
+}
+
+
+/*---------------------------------------- PROMO BANNER ----------------------------------------*/
+
+.promo-banner {
+    background-color: #5FAD56;
+}
+
+
+.banner-content {
+    padding: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.banner-text {
+    flex-grow: 1;
+    line-height: 1.4;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*---------------------------------------- ABOUT US ----------------------------------------*/
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center;
+    background: rgba(242, 193, 78, 0.7);
+    opacity: 0.7;
+}
+
+.about-one,
+.about-two,
+.about-three,
+.about-four {
+    font-weight: 600;
+    color:#4d5057;
+    text-align: center;
+}
+
+
+
+/*---------------------------------------- RESERVATION ----------------------------------------*/
+
+.reservation {
+    text-align: center;
+    margin: 50px 5px;
+}
+
+.reservation h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    color:#4d5057;
+}
+
+.reservation a {
+    text-decoration: none;
+    color:#fff8f0;
+}
+
+
+/*---------------------------------------- FOOD INFO ----------------------------------------*/
+
+.food-info {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.food-info h2 {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 280%;
+    font-size: 50px;
+    color:#4d5057;
+}
+
+.food-one h3,
+.food-two h3 {
+    color:#4d5057;
+}
+
+.food-one > div,
+.food-two > div {
+    line-height: 20px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+
+.food-info p {
+    font-family: 'Palanquin', sans-serif;
+    padding: 0 20px;
+    color:#4d5057;
+}
+
+.food-info hr {
+    border-top: 1px solid #4d5057;
+    margin: 5px 0;
+}
+
+.circle-image {
+    background: url('../images/round-pizza.jpg') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.food-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*---------------------------------------- MENU LINK ----------------------------------------*/
+
+.menu-link {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.menu-link h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    color:#4d5057;
+}
+
+.menu-link a {
+    text-decoration: none;
+    color:#fff8f0;
+}
+
+
+
+
+
+
+/*---------------------------------------- MEDIA QUERIES ----------------------------------------*/
+
+@media screen and (min-width: 768px) {
+    .navbar li {
+        padding: 8px;
+        font-weight: 600;
+    }
+
+    .hero-image h1 {
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 600%;
+        font-weight: 500;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+    }
+
+    @media screen and (min-width: 320px) {
+        footer {
+            text-align: center;
+        }
+    }
+
+
+    /*---------------------------------------- ABOUT US ----------------------------------------*/
+    
+    .about-us {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    .about-one,
+    .about-two,
+    .about-three,
+    .about-four {
+        background: rgba(242, 193, 78, 0.7);
+        padding: 15px;
+        text-align: center;
+        flex-basis: 200px;
+        flex-grow: 1;
+        border: 2px solid #fff8f0;
+    }
+    
+    .about-us p {
+        font-weight: 600;
+        color: #4d5057;
+    }
+
+
+    /*---------------------------------------- RESERVATION ----------------------------------------*/
+
+    .reservation {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 50px 0;
+    }
+    
+    .reservation h2 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 50px;
+        color:#4d5057;
+    }
+    
+    /*---------------------------------------- FOOD INFO ----------------------------------------*/
+
+
+    .food-one,
+    .food-two {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .food-info > div {
+        flex: 1;
+    }
+
+
+   
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .hero-image h1 {
+        left: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .hero-image h1 {
+        left: 70%;
+    }
+}
+
+    /*---------------------------------------- Gallery ----------------------------------------*/
+.gallery-header {
+    visibility: hidden;
+}
+
+    /*---------------------------------------- Menu ----------------------------------------*/
+.menu-header {
+    visibility: hidden;
+}
+
+    /*---------------------------------------- Contact us ----------------------------------------*/
+#contact-header {
+        visibility: hidden;
+}
